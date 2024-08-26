@@ -1,0 +1,44 @@
+* {
+  font-family: 'Trebuchet MS', Verdana, 'Courier New', Courier, monospace;
+}
+
+body {
+  margin: 0px;
+}
+
+p {
+  margin: 16px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+}
+
+label {
+  display: flex;
+}
+
+form {
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  background-color: rgb(247, 249, 250);
+}
+
+.background {
+  display: flex;
+  flex-direction: row;
+}
+
+.img-background {
+  max-height: 100vh;
+}
+
+.sign-up {
+  align-self: center;
+  justify-self: center;
+}
