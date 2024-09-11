@@ -8,6 +8,12 @@ body {
 
 p {
   margin: 16px;
+  margin-left: 30px;
+}
+
+form {
+  background-color: white;
+  padding-left: 16px;
 }
 
 fieldset {
@@ -16,17 +22,46 @@ fieldset {
   border: 0;
 }
 
-label {
-  display: flex;
+input {
+  width: 200px;
+  height: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #E5E7EB;
+  border-radius: 2px;
 }
 
-form {
-  align-items: center;
-  justify-content: center;
+input:focus {
+  box-shadow: 2px 4px 4px -2px gray;
+}
+
+label {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+button {
+  margin-top: 16px;
+  margin-left: 30px;
+  width: 200px;
+  height: 40px;
+  background-color: #596D48;
+  color: white;
+  font-size: 15px;
+  border-width: 0px;
+  border-radius: 5px;
 }
 
 .form {
   background-color: rgb(247, 249, 250);
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 460px;
 }
 
 .background {
@@ -39,6 +74,6 @@ form {
 }
 
 .sign-up {
-  align-self: center;
   justify-self: center;
+  align-self: center;
 }
