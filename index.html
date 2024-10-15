@@ -11,8 +11,11 @@
   <body>
     <div class="background">
       <div class="plant-bg">
+        <div class="logo-background" style="background-color:rgba(0, 0, 0, 0.4)">
+          <img src="images/odin-logo.png" alt="Odin Project logo" height="85%">
+          <p class="logo-text">Odin</p>
+        </div>
         <img class="img-background" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Forest background with leaves">
-        <div></div>
       </div>
 
       <div class="form">
@@ -23,47 +26,47 @@
         <p class="description">You <em>know</em> you want to.</p>
 
         <div class="sign-up">
-          <form action="#" method="post">
+          <form action="#" method="post" id="register">
             <fieldset>
               <h3>Let's do this!</h3>
 
               <div class="inputs">
                 <div class="input">
                   <label for="first_name">First Name</label>
-                  <input type="text" id="first_name" name="first_name">
+                  <input type="text" id="first_name" name="first_name" minlength="1" required>
                 </div>
 
                 <div class="input">
                   <label for="last_name">Last Name</label>
-                  <input type="text" id="last_name" name="last_name">
+                  <input type="text" id="last_name" name="last_name" required>
                 </div>
 
                 <div class="input">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email">
+                  <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="input">
                   <label for="phone_number">Phone Number</label>
-                  <input type="number" id="phone_number" name="phone_number">
+                  <input type="tel" id="phone_number" name="phone_number" pattern="[0-9]{10,10}" required>
                 </div>
 
                 <div class="input">
                   <label for="password">Password</label>
-                  <input type="password" id="password" name="password">
+                  <input type="password" id="password" name="password" required>
                 </div>
 
                 <div class="input">
                   <label for="confirm_password">Confirm Password</label>
-                  <input type="password" id="confirm_password" name="confirm_password">
+                  <input type="password" id="confirm_password" name="confirm_password" required>
                 </div>
               </div>
             </fieldset>
           </form>
         </div>
 
-        <button type="submit">Create Account</button>
-        <p>Already have an account? Log in</p>
+        <button type="submit" form="register">Create Account</button>
+        <p>Already have an account? <span style="color: #596D48">Log in</span> </p>
       </div>
     </div>
   </body>
